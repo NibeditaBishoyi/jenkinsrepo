@@ -9,7 +9,7 @@ tools{
 	
 	stage("checkout"){
 	steps{
-	'https://github.com/NibeditaBishoyi/jenkinsrepo.git'
+	'git credentialsId: 'mygithub', url: 'https://github.com/NibeditaBishoyi/jenkinsrepo.git''
 	     }
 	                  }
 				
