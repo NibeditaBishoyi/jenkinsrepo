@@ -1,0 +1,56 @@
+pipeline
+ {
+  agent any
+
+  stages{
+
+  stage("git checkout")
+  {
+   steps
+     
+	 {
+	  echo "git checkout"
+	 }
+
+   }
+  
+  
+  
+  stage("compile")
+  {
+   steps
+     
+	 {
+	  echo "compile job"
+	 }
+
+   }
+   
+   
+   
+   stage("test")
+  {
+   steps
+     
+	 {
+	  echo "test job"
+	 }
+
+   }
+   
+   
+   stage("package")
+  {
+   steps
+     
+	 {
+	  echo "package job"
+	 }
+
+   }
+   
+   
+    }
+
+
+ }
